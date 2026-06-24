@@ -1,11 +1,11 @@
-# Frontend Lab
+# frontend-learning-lab
 
 프론트엔드 공부 내용을 모아두는 개인 학습 저장소입니다.
 
 ## 구조
 
 ```text
-frontend-lab/
+frontend-learning-lab/
 └── projects/
     └── toast-notification-system/
 ```
