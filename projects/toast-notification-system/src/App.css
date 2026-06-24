@@ -1,0 +1,146 @@
+.demo-shell {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  min-height: 100svh;
+  box-sizing: border-box;
+  padding: 56px 24px;
+  text-align: left;
+}
+
+.demo-header {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.demo-kicker {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.demo-header h1 {
+  margin: 0 0 16px;
+}
+
+.demo-copy {
+  max-width: 680px;
+  color: var(--text);
+}
+
+.demo-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.demo-button {
+  min-height: 54px;
+  padding: 0 16px;
+  color: #172033;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  font: 700 14px/1 var(--sans);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.demo-button:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+.demo-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.demo-button--success {
+  border-color: rgba(36, 161, 72, 0.45);
+  background: rgba(36, 161, 72, 0.1);
+}
+
+.demo-button--error {
+  border-color: rgba(218, 30, 40, 0.45);
+  background: rgba(218, 30, 40, 0.1);
+}
+
+.demo-button--warning {
+  border-color: rgba(241, 194, 27, 0.65);
+  background: rgba(241, 194, 27, 0.16);
+}
+
+.demo-button--info {
+  border-color: rgba(15, 98, 254, 0.45);
+  background: rgba(15, 98, 254, 0.1);
+}
+
+.demo-button--loading {
+  border-color: rgba(138, 63, 252, 0.45);
+  background: rgba(138, 63, 252, 0.1);
+}
+
+.demo-button--neutral {
+  background: var(--social-bg);
+}
+
+.demo-note {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.demo-note div {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--social-bg);
+}
+
+.demo-note strong,
+.demo-note span {
+  display: block;
+}
+
+.demo-note strong {
+  margin-bottom: 6px;
+  color: var(--text-h);
+  font-size: 14px;
+}
+
+.demo-note span {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+@media (prefers-color-scheme: dark) {
+  .demo-button {
+    color: #f4f7fb;
+    background: #20232d;
+  }
+}
+
+@media (max-width: 720px) {
+  .demo-shell {
+    justify-content: flex-start;
+    padding: 36px 18px 120px;
+  }
+
+  .demo-panel,
+  .demo-note {
+    grid-template-columns: 1fr;
+  }
+}
