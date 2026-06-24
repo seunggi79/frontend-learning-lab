@@ -35,6 +35,8 @@ Toast 시스템은 `src/shared/toast/` 아래에 구현되어 있습니다.
 
 Demo UI는 `src/App.tsx`, `src/App.css`에 구현되어 있습니다.
 
+상세 구현 기록은 `docs/toast-notification-system.md`에 정리되어 있습니다.
+
 ## 제공 API
 
 ```ts

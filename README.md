@@ -8,11 +8,9 @@
 
 ```text
 frontend-learning-lab/
-├── docs/
-│   ├── project-notes.md
-│   └── toast-notification-system.md
 └── projects/
     └── toast-notification-system/
+        └── docs/
 ```
 
 ## Projects
@@ -36,7 +34,7 @@ frontend-learning-lab/
 - 접근성 role과 `aria-live` 적용
 - 과제 확인용 demo UI 작성
 
-자세한 설명은 [docs/toast-notification-system.md](docs/toast-notification-system.md)를 참고하면 됩니다.
+자세한 설명은 [projects/toast-notification-system/docs/toast-notification-system.md](projects/toast-notification-system/docs/toast-notification-system.md)를 참고하면 됩니다.
 
 ## Run
 
@@ -58,5 +56,5 @@ npm run build
 
 - 새 실습은 `projects/프로젝트명/` 아래에 추가합니다.
 - 각 프로젝트에는 가능한 한 `README.md`를 작성합니다.
-- 공통 학습 기록이나 설계 설명은 `docs/`에 정리합니다.
+- 프로젝트별 개인 문서나 설계 설명은 해당 프로젝트 내부 `docs/`에 정리합니다.
 - `node_modules`, `dist`, 환경 변수 파일은 커밋하지 않습니다.
